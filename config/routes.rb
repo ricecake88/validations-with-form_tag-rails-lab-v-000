@@ -54,6 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-    resources :posts, only: [:show, :edit, :new, :update]
+    resources :posts, only: [:show, :edit, :update]
     resources :authors, only: [:new, :create, :show]
 end
