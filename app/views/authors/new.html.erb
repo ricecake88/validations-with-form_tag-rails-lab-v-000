@@ -12,17 +12,17 @@
     </h2>
   </div>
 
-  <div class="field<%= ' field_with_errors' do if @author.errors[:name].any? %>">
+  <div class="field<%= ' field_with_errors' if @author.errors[:name].any? %>">
     <%= label_tag "name", @author.name %>
     <%= text_field_tag "name" %>
   </div>
 
-  <div class="field<%= ' field_with_errors' do if @author.errors[:email].any? %>">
+  <div class="field<%= ' field_with_errors' if @author.errors[:email].any? %>">
     <%= label_tag "email", @author.email%>
     <%= text_field_tag "email" %>
   </div>
 
-  <div class="field<%= ' field_with_errors' do if @author.errors[:phone_number].any? %>">
+  <div class="field<%= ' field_with_errors' if @author.errors[:phone_number].any? %>">
     <%= label_tag "phone_number", @author.phone_number %>
     <%= text_field_tag "phone_number" %>
   </div>
