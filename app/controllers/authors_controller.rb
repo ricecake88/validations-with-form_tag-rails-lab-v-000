@@ -17,17 +17,6 @@ class AuthorsController < ApplicationController
     end
   end
 
-  def update
-    @author = Author.find(params[:id])
-    @author.assign_attributes(author_params)
-    if @author.valid?
-      @author.save
-      redirect_to author_path@author
-    else
-      render :edit
-    end
-  end
-
   private
 
   def author_params
