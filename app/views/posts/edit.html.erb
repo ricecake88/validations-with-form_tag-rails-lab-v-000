@@ -11,8 +11,9 @@
       </ul>
     </h2>
   </div>
+  <% end %>
 
-  <div class="field<%=' field_with_errors' if @person.errors[:title].any? %>">
+  <div class="field<%=' field_with_errors' if @post.errors[:title].any? %>">
     <%= label_tag "title", "Title" %>
     <%= text_field_tag "title", @post.title %>
   </div>
